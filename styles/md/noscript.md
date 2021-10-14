@@ -1,4 +1,4 @@
-# <noscript> tag in html with xcfo api.
+# `<noscript>` tag in html with xcfo api.
  
 ## import
   ```html

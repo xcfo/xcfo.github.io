@@ -1,0 +1,181 @@
+/* Shadow */
+
+.box-shadow {
+    box-shadow: 1px 1px 9px 0px rgba(0, 0, 0, 0.274);
+}
+
+
+/* End Shawdow */
+
+
+/* Size 500 Square */
+
+.s500-square {
+    min-height: 500px;
+    min-width: 500px;
+    max-height: 500px;
+    max-width: 500px;
+    height: 500px;
+    width: 500px;
+}
+
+
+/* End Size 500 Square*/
+
+
+/* Border-radius */
+
+.r50p {
+    border-radius: 50%;
+}
+
+.r10 {
+    border-radius: 10px;
+}
+
+.r20 {
+    border-radius: 20px;
+}
+
+.r40 {
+    border-radius: 40px;
+}
+
+.r50 {
+    border-radius: 50px;
+}
+
+.r100 {
+    border-radius: 100px;
+}
+
+
+/* End Border-radius */
+
+
+/* Transition */
+
+.t1s {
+    transition: 1s;
+}
+
+.t01s {
+    transition: .1s;
+}
+
+.t03s {
+    transition: .3s;
+}
+
+.t035s {
+    transition: .35s;
+}
+
+.t05s {
+    transition: .5s;
+}
+
+.t5s {
+    transition: 5s;
+}
+
+
+/* End Transition */
+
+
+/* Animation */
+
+.a-tr-s {
+    animation: tr-s 1s;
+}
+
+.a-tl-s {
+    animation: tl-s 1s;
+}
+
+.a-l-s {
+    animation: l-s 1s;
+}
+
+.a-r-s {
+    animation: r-s 1s;
+}
+
+
+/* End Animation */
+
+
+/*Animation Ketframes*/
+
+@keyframes tr-s {
+    from {
+        transform: translate(100px, -100px)
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes tl-s {
+    from {
+        transform: translate(-100px, -100px)
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes l-s {
+    from {
+        transform: translateX(-100px)
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes r-s {
+    from {
+        transform: translateX(100px)
+    }
+    to {
+        transform: none;
+    }
+}
+
+
+/*End Animation Ketframes*/
+
+
+/*Flex box*/
+
+.flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* End Flex box */
+
+
+/* Select */
+
+.ns {
+    user-select: none;
+}
+
+.as {
+    user-select: all;
+}
+
+.ts {
+    user-select: text;
+}
+
+.ns {
+    user-select: auto;
+}
+
+
+/* End Select */

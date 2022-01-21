@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100&display=swap');
+         ::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+        
+        body{
+            background: url(https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/570/f63da4d6ef68e93e799ca1d67f6d345f0aa124bd.jpg);
+        }
+        
+        #time {
+            font-size: 8em;
+            color: rgba(255, 255, 255, 0.15);
+            font-weight: lighter;
+            user-select: none;
+            font-family: 'Noto Sans SC', monospace;
+        }
+        
+        #date {
+            font-size: large;
+            color: rgba(255, 255, 255, 0.1); 
+            font-family: 'Noto Sans SC', monospace;
+            user-select: none;
+        }
+        
+        .cover {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0);
+            animation: in 2s;
+            z-index: 2;
+
+        }
+
+        @keyframes in {
+            0%{
+                background-color: rgba(0, 0, 0, 1);
+                z-index: 9999999;
+
+            }
+            100%{
+                background-color: rgba(0, 0, 0, 0);
+                z-index: 2;
+            }
+        }
+
+        video{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            z-index: -1;
+        }
+        .container{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+        #apps{
+            z-index: 99999;
+            position: fixed;
+            display: flex;
+            flex-direction: left;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            position: fixed;
+            bottom: 50px;
+            transition: .5s;
+        }
+        .aa{
+            width: 60px;
+            height: 60px;
+        }
+        a{
+            width:50px;
+            height:50px;
+            margin:5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            -webkit-backdrop-filter: blur(2px);
+	        backdrop-filter: blur(4px);
+            background-color: rgba(255, 255, 255, 0.089);
+            border-radius:4px;
+            transition: .5s;
+            opacity: .2;
+        }
+        a:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <video playsinline="" autoplay="" muted="" loop="" poster="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/570/f63da4d6ef68e93e799ca1d67f6d345f0aa124bd.jpg">
+        <source src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/570/982491acceb6c9dde0d5e49dab1e7540c5faa1de.webm" type="video/webm">
+        <source src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/570/8144f2b875ebda693f4dec2f7c43a7a1a916375f.mp4" type="video/mp4">
+    </video>
+    
+    <div class="container">
+        <font id="time">Working.</font>
+    </div>
+    
+    <div class="cover"></div>
+    <div id="apps"></div>
+
+
+</body>
+
+</html>

@@ -115,6 +115,11 @@ text {
     color: var(--fontcolor);
     font-size: 20px;
     font-weight: lighter;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100vw;
+    text-align: center;
+    margin: 10px;
 }
 
 img {
